@@ -1,45 +1,90 @@
 <!DOCTYPE html>
 <html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Anna Chernova // Web Developer</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
+  <body>
+    <!-- main logo / nav -->
+    <header>
+      <h1>Anna Chernova</h1>
+      <p>Front-end developer</p>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About me</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">CV</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <!-- main logo / nav -->
-  <header>
-    <h1>Lernantino</h1>
-    <nav>
-    </nav>
-  </header>
-
-  <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
-    </div>
-  </section>
-
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
+    <!-- hero banner -->
+    <section class="hero-banner">
+      <img
+        src="/starter/images/Anna Che avatar.jpg"
+        alt="Anna Chernova avatar picture"
+        id="avatar_pic"
+      />
     </section>
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-    </section>
+    <main class="page-wrapper">
+      <!-- about me -->
+      <section class="page-section" id="about">
+        <p>Hey there! </br>
+          I'm Anna Chernova</p>
+        <h2>About me</h2>
+      </section>
 
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-    </section>
-  </main>
-</body>
+      <!-- portfolio container -->
+      <section class="page-section" id="work">
+        <h2>Portfolio</h2>
+      </section>
 
+     <!-- portfolio container -->
+       <section class="page-section" id="work">
+        <h2>Download CV</h2>
+        <p>Click the button above to download my CV in PDF format</p>
+      </section>
+
+      <!-- contact -->
+      <section class="page-section contact" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact_links">
+          <ul>
+            <li><a href="#">annanvks@gmail.com</a></li>
+            <li><a href="#">/AnnaChe</a></li>
+            <li><a href="#">/Anna702</a></li>
+        </div>
+      <!-- contact form -->
+      <h3>Please fill out the form to send me an email:</h3>
+
+      <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Your email..">
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="The main focus of your message..">
+
+          <label for="subject">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message here.." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      </section>
+    </main>
+
+    <footer>&copy; Anna Chernova 2023</footer>
+
+  </body>
 </html>
