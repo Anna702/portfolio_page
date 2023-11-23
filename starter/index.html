@@ -5,44 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Anna Chernova // Web Developer</title>
+    <!-- connected new font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- added reset CSS file -->
+    <link rel="stylesheet" href="/starter/css/reset.css"/>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <!-- main logo / nav -->
-    <header>
-      <div class="header-logo">
-      <h1>Anna Chernova</h1>
-      <p>Front-end developer</p>
-    </div>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About me</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">CV</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="page_wrapper">
+      <!-- main logo / nav -->
+      <header>
+        <div class="header-logo">
+          <h1>Anna Chernova</h1>
+          <p id="header-logo-p">Front-end developer</p>
+        </div>
 
+        <nav>
+          <ul class="nav_ul">
+            <li><a class="nav_links" href="#">About me</a></li>
+            <li><a class="nav_links" href="#">Portfolio</a></li>
+            <li><a class="nav_links"  href="#">CV</a></li>
+            <li><a class="nav_links"  href="#">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="line"></div>
     <!-- hero banner -->
-    <section class="hero-banner">
-      <img
-        src="/starter/images/Anna Che avatar.jpg"
-        alt="Anna Chernova avatar picture"
-        id="avatar_pic"
-      />
-    </section>
+    <main>
+      <div id="about_me">
+        <div class="col-left">
+          <div id="avatar_container">
+            <div id="avatar_grey_box"></div>
+            <img
+              src="/starter/images/Anna Che avatar.jpg"
+              alt="Anna Chernova avatar picture"
+              id="avatar_pic"
+            />
+          </div>  
+        </div>
 
-    <main class="page-wrapper">
-      <!-- about me -->
-      <section class="page-section" id="about">
-        <p>Hey there! </br>
-          I'm Anna Chernova</p>
-        <h2>About me</h2>
-      </section>
-
+        
+          <!-- about me -->
+          <div class="col-right">
+            <section class="page-section" id="about">
+            <p>Hey there! </br>
+              I'm Anna Chernova</p>
+            <h2>About me</h2>
+            <article id="text_about_me">
+              I'm a fresh-faced software developer with a 15-year background in journalism and PR. After graduating from a Northcoders software development bootcamp in 2023, I dove headfirst into the world of HTML, CSS, JavaScript, and React/React Native. But I didn't stop there - I hungered for more knowledge and enrolled in a front-end development bootcamp with EdX.
+            </br></br>
+              I'm on a mission to merge my storytelling prowess with my tech skills to bring some seriously cool projects to life. My ultimate goal? To become a pro at creating user-friendly and valuable apps.
+              </br></br>
+              Originally hailing from Moscow, I've got Italian citizenship and have been calling the UK home since 2014 (specifically Folkestone, Kent). Let's connect and create something awesome together!
+            </article>
+          </section>
+        </div>
+      </div>
+      
       <!-- portfolio container -->
       <section class="page-section" id="work">
         <h2>Portfolio</h2>
@@ -56,13 +78,40 @@
 
       <!-- contact -->
       <section class="page-section contact" id="contact">
+
         <h2>Contact Me</h2>
         <div class="contact_links">
-          <ul>
-            <li><a href="#">annanvks@gmail.com</a></li>
-            <li><a href="#">/AnnaChe</a></li>
-            <li><a href="#">/Anna702</a></li>
+          <ul class="contacts_ul">
+
+            <li>
+              <img
+        src="/starter/images/icon_email.png"
+        alt="email icon"
+        id="email-icon"
+        class="contact_icons"
+      />
+              <a href="#">annanvks@gmail.com</a></li>
+
+            <li>
+              <img
+        src="/starter/images/icon_linkedin.png"
+        alt="linkedin icon"
+        id="linkedin-icon"
+        class="contact_icons"
+      />
+              <a href="#">/AnnaChe</a></li>
+
+
+            <li>
+              <img
+        src="/starter/images/icon_github.png"
+        alt="github icon"
+        id="github-icon"
+        class="contact_icons"
+      />
+              <a href="#">/Anna702</a></li>
         </div>
+
       <!-- contact form -->
       <h3>Please fill out the form to send me an email:</h3>
 
@@ -87,6 +136,6 @@
     </main>
 
     <footer>&copy; Anna Chernova 2023</footer>
-
+  </div>
   </body>
 </html>
