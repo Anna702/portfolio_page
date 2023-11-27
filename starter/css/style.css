@@ -74,7 +74,7 @@ h2 {
   border-radius: 30px;
   display: inline-block;
   padding: 5px 14px;
-  letter-spacing: 0.1dvh;
+  letter-spacing: 0.3dvh;
   margin: 15px 0px;
   font-size: larger;
 }
@@ -138,6 +138,7 @@ h6 {
   border: 3px solid #9bc437;
   border-radius: 50px;
   font-size: 15px;
+  
 }
 
 #avatar_container {
@@ -226,4 +227,43 @@ p {
 #submit:hover {
   background-color: black;
   color: #9bc437;
+}
+
+#portfolio_container {
+  display: grid;
+  grid-template-rows: 450px 150px;
+
+  gap: 10px;
+  grid-template-areas:
+    "app_1 app_1 app_1 app_1"
+    "app_2 app_3 app_4 app_5";
+}
+
+#app_1 {
+  grid-area: app_1;
+}
+
+#app_1 img {
+  height: 300px;
+}
+
+#app_2 {
+  grid-area: app_2;
+}
+
+#app_3 {
+  grid-area: app_3;
+}
+
+#app_4 {
+  grid-area: app_4;
+}
+
+#app_5 {
+  grid-area: app_5;
+}
+
+.four_apps img {
+  height: 200px;
+  width: auto;
 }
