@@ -44,6 +44,8 @@ a {
 
 a:hover {
   color: #9bc437;
+  background-color: black;
+  border: black;
 }
 
 .header-logo,
@@ -52,9 +54,12 @@ nav {
   margin: 10px;
 }
 
+.header-logo:hover {
+  background-color: black;
+}
+
 .header-logo {
-  border: 2px solid #db6a64d0;
-  background-color: #e2615ac0;
+  background-color: #9bc437;
   border-radius: 45px;
   padding: 5px 40px;
 }
@@ -151,8 +156,10 @@ h6 {
 
 #avatar_grey_box {
   width: 355px;
-  height: 400px;
+  height: 355px;
   background-color: #e8e3de;
+  position: absolute;
+  bottom: 0;
 }
 
 #about_me {
@@ -179,6 +186,7 @@ h6 {
 #form {
   display: flex;
   flex-direction: column;
+  width: inherit;
 }
 
 #text_about_me,
@@ -212,4 +220,10 @@ p {
   font-size: larger;
   padding: 10px;
   margin-top: 10px;
+  width: 50%;
+}
+
+#submit:hover {
+  background-color: black;
+  color: #9bc437;
 }

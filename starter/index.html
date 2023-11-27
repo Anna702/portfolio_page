@@ -18,10 +18,10 @@
     <div id="page_wrapper">
       <!-- main logo / nav -->
       <header>
-        <div class="header-logo">
+        <div class="header-logo"><a  href="#cv_download">
           <h1>Anna Chernova</h1>
           <p id="header-logo-p">Front-end developer</p>
-        </div>
+        </a></div>
 
         <nav>
           <ul class="nav_ul">
@@ -51,7 +51,7 @@
         
           <!-- about me -->
           <div class="col-right">
-            <section class="page-section" id="about">
+            <section class="page-section" id="about" aria-label="About me information">
             <p>Hey there, </br>
               I'm Anna Chernova!</p>
             <h2>About me</h2>
@@ -67,12 +67,57 @@
       </div>
       
       <!-- portfolio container -->
-      <section class="page-section" id="portfolio">
+      <section class="page-section" id="portfolio" aria-label="My portfolio projects">
         <h2>Portfolio</h2>
-      </section>
+        <div class="projects-all">
 
-     <!-- portfolio container -->
-       <section class="page-section" id="cv_download">
+          <article id="project_main">
+            <img src="./images/project1_image.png" alt="Project 1">
+            <div class="project-info">
+              <h2>Horiseon</h2>
+              <p>Code refactoring</p>
+            </div>
+          </div>
+        
+
+        <div class="project">
+          <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <div class="project-info">
+              <h2>Project 2</h2>
+              <p>Description of Project 2</p>
+            </div>
+          </div>
+
+        <div class="project">
+            <img src="project3.jpg" alt="Project 3">
+            <div class="project-info">
+              <h2>Project 3</h2>
+              <p>Description of Project 3</p>
+            </div>
+        </div>
+      </div>
+
+          <div class="project">
+            <img src="project4.jpg" alt="Project 4">
+            <div class="project-info">
+              <h2>Project 4</h2>
+              <p>Description of Project 4</p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="project5.jpg" alt="Project 5">
+            <div class="project-info">
+              <h2>Project 5</h2>
+              <p>Description of Project 5</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+     <!-- СV container -->
+       <section class="page-section" id="cv_download" aria-label="CV download">
         <h2>CV Download</h2>
         <p>Are you still looking for a software developer with a unique blend of technical expertise and communication skills? 
         </br>
@@ -83,7 +128,7 @@
 
       <!-- contacts -->
       <h2>Contacts</h2>
-      <section id="contacts">
+      <section id="contacts" aria-label="Actual contacts">
         
         <div id="col-left-contacts">
           <ul class="contacts_ul">
@@ -118,16 +163,16 @@
          <h3>Please fill out the form to send me an email:</h3>
          <form id="form">
           <label for="fname">Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <input type="text" id="fname" placeholder="Your name.." required>
 
           <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Your email..">
+          <input type="text" id="email" placeholder="Your email.."required>
 
           <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="The main focus of your message..">
+          <input type="text" id="subject" placeholder="The main focus of your message..">
 
           <label for="subject">Message</label>
-          <textarea id="message" name="message" placeholder="Write your message here.." style="height:200px"></textarea>
+          <textarea id="message" placeholder="Write your message here.." style="height:200px"></textarea>
 
           <input id="submit" type="submit" value=" Click to submit">
         </form>
