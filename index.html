@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Anna Chernova // Web Developer</title>
+    <!-- connected new font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- added reset CSS file -->
+    <link rel="stylesheet" href="/starter/css/reset.css"/>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div id="page_wrapper">
+      <!-- main logo / nav -->
+      <header>
+        <div class="header-logo"><a  href="#cv_download">
+          <h1>Anna Chernova</h1>
+          <p id="header-logo-p">Front-end developer</p>
+        </a></div>
+
+        <nav>
+          <ul class="nav_ul">
+            <li><a class="nav_links" href="#about_me">ABOUT ME</a></li>
+            <li><a class="nav_links" href="#portfolio-section">PORTFOLIO</a></li>
+            <li><a class="nav_links"  href="#cv_download">CV</a></li>
+            <li><a class="nav_links"  href="#contacts">CONTACTS</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <div class="line"></div>
+    <!-- hero banner -->
+    <main>
+      <div id="about_me">
+        <div class="col-left">
+          <div id="avatar_container">
+            <div id="avatar_grey_box"></div>
+            <img
+              src="/starter/images/Anna Che avatar.jpg"
+              alt="Anna Chernova avatar picture"
+              id="avatar_pic"
+            />
+          </div>  
+        </div>
+
+        
+          <!-- about me -->
+          <div class="col-right">
+            <section id="about" aria-label="About me information">
+            <p>Hey there, </br>
+              I'm Anna Chernova!</p>
+            <h2>About me</h2>
+            <article id="text_about_me">
+              I'm a fresh-faced software developer with a 15-year background in journalism and PR. After graduating from a Northcoders software development bootcamp in 2023, I dove headfirst into the world of HTML, CSS, JavaScript, and React/React Native. But I didn't stop there - I hungered for more knowledge and enrolled in a front-end development bootcamp with EdX.
+            </br></br>
+              I'm on a mission to merge my storytelling prowess with my tech skills to bring some seriously cool projects to life. My ultimate goal? To become a pro at creating user-friendly and valuable apps.
+              </br></br>
+              Originally hailing from Moscow, I am an Italian citizen living in the UK since 2014 (greetings from Folkestone, Kent). Let's connect and create something awesome together!
+            </article>
+          </section>
+        </div>
+      </div>
+      
+      <!-- portfolio container -->
+      <section class="page-section" id="portfolio-section" aria-label="My portfolio projects">
+        <h2>Portfolio</h2>
+        <div id="portfolio_container">
+
+          <article id="app_1">
+            <div class="portfolio-pic">
+              <a href="https://github.com/Anna702/code_refactor" target="_blanc"><img src="./images/pic1portfolio.png" alt="Project 1 picture" class="portfolio-pic"></a>
+            </div>
+            <div id="first_pic_container">
+            <h3> HTML, CSS, Git </h3>
+            <p>Code refactoring project</p>
+          </div>
+          </article>
+
+          <article id="app_2" class="four_apps">
+            <div class="portfolio-pic">
+               <a href="https://github.com/Anna702/prework-study-guide" target="_blanc"><img src="/starter/images/02-portfolio-1.jpg" alt="Project 2 picture" class="portfolio-pic">
+            </div>
+            <div class="four_apps_container">
+              <h3>Pre-work Study Guide</h3>
+              <p>My first HTML page</p>
+            </div>
+          </article>
+
+          <article id="app_3" class="four_apps">  
+            <div class="portfolio-pic">
+             
+              <img src="/starter/images/02-portfolio-2.jpg" alt="Project 3 picture" class="portfolio-pic"></a>
+            </div>
+            <div class="four_apps_container">
+              <h3>App 3</h3>
+              <p>About the app</p>
+            </div>
+          </article>
+
+          <article id="app_4" class="four_apps">
+            <div class="portfolio-pic">
+              <img src="/starter/images/02-portfolio-3.jpg" alt="Project 4 picture" class="portfolio-pic">
+            </div>
+            <div class="four_apps_container">
+              <h3>App 4</h3>
+              <p>About the app</p>
+          </div>
+          </article>
+
+          <article id="app_5" class="four_apps">
+            <div class="portfolio-pic">
+              <img src="/starter/images/02-portfolio-4.jpg" alt="Project 5 picture" class="portfolio-pic">
+            </div>
+            <div class="four_apps_container">
+              <h3>App 5</h3>
+              <p>About the app</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+
+     <!-- СV container -->
+       <section class="page-section" id="cv_download" aria-label="CV download">
+        <h2>CV Download</h2>
+        <p>Are you still looking for a software developer with a unique blend of technical expertise and communication skills? 
+        </br>
+          Look no further! Let's connect and explore opportunities for collaboration. 
+        </br></br>
+          <a id="click_download" href="/starter/files/Anna Chernova_trainee software developer_CV.pdf" download="Anna_Chernova_Software_developer_CV">Click here</a> to download my CV in PDF and learn more about my creative background and tech industry journey.</p>
+      </section>
+
+      <!-- contacts -->
+      
+      <section class="page-section" id="contacts" aria-label="Actual contacts">
+        <h2>Contacts</h2>
+        <div id="col-left-contacts">
+          <ul class="contacts_ul">
+            <li class="contacts_li">
+              <img
+        src="/starter/images/icon_email.png"
+        alt="email icon"
+        id="email-icon"
+        class="contact_icons"/>
+              <a href="mailto:annanvks@gmail.com">annanvks@gmail.com</a>
+            </li>
+            <li class="contacts_li">
+              <img
+        src="/starter/images/icon_linkedin.png"
+        alt="linkedin icon"
+        id="linkedin-icon"
+        class="contact_icons"/>
+              <a href="https://www.linkedin.com/in/annache/" target="_blank">/AnnaChe</a>
+            </li>
+            <li class="contacts_li">
+              <img
+        src="/starter/images/icon_github.png"
+        alt="github icon"
+        id="github-icon"
+        class="contact_icons"/>
+              <a href="https://github.com/Anna702" target="_blank">/Anna702</a>
+            </li>
+        </div>
+
+      <!-- contact form - diseibled for now -->
+        <!-- <div id="col-right-contacts">
+         <h3>Please fill out the form to send me an email:</h3>
+         <form id="form">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" placeholder="Your name.." required>
+
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Your email.."required>
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="The main focus of your message..">
+
+          <label for="subject">Message</label>
+          <textarea id="message" placeholder="Write your message here.." style="height:200px"></textarea>
+
+          <input id="submit" type="submit" value=" Click to submit">
+        </form> -->
+      </div>
+      </section>
+    </main>
+
+    <!-- <div class="line"></div> -->
+    <footer>&copy; Anna Chernova 2023</footer>
+  </div>
+  </div>
+  </body>
+</html>
