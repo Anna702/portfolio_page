@@ -77,6 +77,7 @@ h2 {
   letter-spacing: 0.3dvh;
   margin: 15px 0px;
   font-size: larger;
+  margin-right: 20px;
 }
 
 #click_download {
@@ -118,11 +119,15 @@ h3 {
   display: flex;
   justify-content: left;
   padding: 20px 0px;
+  border: ;
 }
 
 .contacts_ul {
   list-style-type: none;
-  /* padding: 15px 5px; */
+  display: flex;
+  padding: 20px;
+  border-left: 5px solid #9bc437;
+  
 }
 
 .contacts_li {
@@ -177,15 +182,15 @@ h3 {
   flex-direction: row;
 }
 
-#col-left-contacts {
-  width: 45%;
+#contacts {
+  display: flex;
 }
 
-#col-right-contacts {
+/* #col-right-contacts {
   width: 75%;
   display: flex;
   flex-direction: column;
-}
+} */
 
 #form {
   display: flex;
@@ -203,6 +208,10 @@ p {
   margin-bottom: 25px;
   border-left: 5px solid #9bc437;
   padding: 20px;
+}
+
+.page-section {
+  display: flex;
 }
 
 .col-right {
@@ -243,6 +252,12 @@ p {
     "app_1 app_1 app_1 app_1"
     "app_2 app_3 app_4 app_5";
   width: 300px;
+  padding: 20px;
+}
+
+.four_apps div {
+  display: flex;
+  justify-content: center;
 }
 
 #app_1 {
