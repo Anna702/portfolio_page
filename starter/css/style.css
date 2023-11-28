@@ -137,6 +137,7 @@ nav li {
 
 .header-logo:hover {
   background-color: black;
+  color: #9bc437;
 }
 
 .header-logo {
@@ -145,6 +146,17 @@ nav li {
   padding: 5px 40px;
 }
 
+.header-logo a {
+  text-decoration: none;
+}
+.header-logo h1,
+.header-logo p {
+  color: black;
+}
+.header-logo:hover h1,
+.header-logo:hover p {
+  color:#9bc437;
+}
 #header-logo-p {
   padding-left: 50px;
   padding-bottom: 5px;
