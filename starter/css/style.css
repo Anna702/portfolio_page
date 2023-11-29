@@ -380,11 +380,11 @@ p {
     display: flex;
     flex-direction: column;
   }
-nav {
-  margin: 0px;
-  padding-top: 25px;
-  padding-left: 15px;
-}
+  nav {
+    margin: 0px;
+    padding-top: 25px;
+    padding-left: 15px;
+  }
 
   .nav_ul {
     display: grid;
@@ -410,10 +410,25 @@ nav {
     flex-direction: column;
   }
 
-  #app_1, .four_apps {
+  #app_1,
+  .four_apps {
     width: 100%;
   }
 
+  #cv_download {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts_ul {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* ----- Form ----- */
